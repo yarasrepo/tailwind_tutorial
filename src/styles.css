@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Satoshi', sans-serif;
+  }
+
+.card{
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+
+.badge{
+    @apply bg-blue-100 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
